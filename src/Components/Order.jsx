@@ -1,21 +1,9 @@
-/*
-BogoPricing.jsx
-Single-file React component using Tailwind CSS to replicate the provided pricing UI.
-
-How to use:
-1. Ensure Tailwind CSS is configured in your React project (create-react-app + Tailwind or Vite + Tailwind).
-2. Save this file as src/components/BogoPricing.jsx
-3. Import and render <BogoPricing /> in your App.jsx or page.
-
-This component is self-contained and uses Tailwind utility classes. Tweak colors, spacing, or fonts in your Tailwind config to match the original precisely.
-*/
-
 import React, { useState } from 'react';
 
 export default function BogoPricing() {
   const [selected, setSelected] = useState('2');
 
-  // Shared options for every unit (same selectors for all units)
+
   const [sharedOptions, setSharedOptions] = useState({
     one: { size: 'S', colour: 'Black' },
     two: { size: 'S', colour: 'Colour' }
